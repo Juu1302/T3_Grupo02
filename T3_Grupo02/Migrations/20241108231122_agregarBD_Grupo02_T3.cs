@@ -5,7 +5,7 @@
 namespace T3_Grupo02.Migrations
 {
     /// <inheritdoc />
-    public partial class agregarLibroABD : Migration
+    public partial class agregarBD_Grupo02_T3 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

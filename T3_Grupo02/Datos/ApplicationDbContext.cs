@@ -1,5 +1,5 @@
-﻿
-using Microsoft.EntityFrameworkCore;
+
+﻿using Microsoft.EntityFrameworkCore;
 using T3_Grupo02.Models;
 
 namespace T3_Grupo02.Datos

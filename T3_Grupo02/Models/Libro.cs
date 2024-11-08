@@ -12,6 +12,7 @@ namespace T3_Grupo02.Models
         public string editorial { get; set; }
         public int aniopublicacion { get; set; }
         public int paginas { get; set; }
+        public string categoria { get; set; }
 
     }
 }

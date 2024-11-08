@@ -11,8 +11,8 @@ using T3_Grupo02.Datos;
 namespace T3_Grupo02.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241108223527_agregarLibroABD")]
-    partial class agregarLibroABD
+    [Migration("20241108231122_agregarBD_Grupo02_T3")]
+    partial class agregarBD_Grupo02_T3
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

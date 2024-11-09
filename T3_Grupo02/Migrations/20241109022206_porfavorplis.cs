@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace T3_Grupo02.Migrations
 {
     /// <inheritdoc />
-    public partial class scaffoldidentityRazorClassLib : Migration
+    public partial class porfavorplis : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -48,6 +48,25 @@ namespace T3_Grupo02.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Libro",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    autor = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    tema = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    editorial = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    aniopublicacion = table.Column<int>(type: "int", nullable: false),
+                    paginas = table.Column<int>(type: "int", nullable: false),
+                    categoria = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Libro", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -213,6 +232,9 @@ namespace T3_Grupo02.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Libro");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");

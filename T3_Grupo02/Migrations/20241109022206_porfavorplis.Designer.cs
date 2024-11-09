@@ -12,8 +12,8 @@ using T3_Grupo02.Datos;
 namespace T3_Grupo02.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241109010136_scaffoldidentityRazorClassLib")]
-    partial class scaffoldidentityRazorClassLib
+    [Migration("20241109022206_porfavorplis")]
+    partial class porfavorplis
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -229,11 +229,11 @@ namespace T3_Grupo02.Migrations
 
             modelBuilder.Entity("T3_Grupo02.Models.Libro", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("aniopublicacion")
                         .HasColumnType("int");
@@ -261,7 +261,7 @@ namespace T3_Grupo02.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Libro");
                 });

@@ -5,7 +5,7 @@ namespace T3_Grupo02.Models
     public class Libro
     {
         [Key]
-        public int id {  get; set; }
+        public int Id { get; set; }
 
         [Required(ErrorMessage ="El Titulo del libro es obligatorio")]
         public string titulo { get; set; }

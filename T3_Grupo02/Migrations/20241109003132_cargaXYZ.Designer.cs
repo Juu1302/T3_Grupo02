@@ -11,8 +11,8 @@ using T3_Grupo02.Datos;
 namespace T3_Grupo02.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241109000357_holaLee")]
-    partial class holaLee
+    [Migration("20241109003132_cargaXYZ")]
+    partial class cargaXYZ
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

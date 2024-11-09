@@ -23,6 +23,11 @@ namespace T3_Grupo02.Controllers
             return View();
         }
 
+        public IActionResult Diseno()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

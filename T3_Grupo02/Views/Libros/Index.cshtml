@@ -4,5 +4,60 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+<div class="container pt-3">
 
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-primary">Lista de Libros</h2>
+        </div>
+        <div class="col-6">
+            <a asp-controller="Libros" asp-action="Crear" class="btn btn-primary">Nuevo Libro</a>
+        </div>
+    </div>
+
+    <br />
+
+    @if (Model.Count() > 0)
+    {
+        <table class="table table-bordered table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Titulo</th>
+                    <th>Nombre del autor</th>
+                    <th>Tema</th>
+                    <th>Editorial</th>
+                    <th>Año de publicación</th>
+                    <th>Número de Páginas</th>
+                    <th>Tipo de categoría</th>
+                    <th></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td width="25%">@item.titulo</td>
+                        <td width="25%">@item.autor</td>
+                        <td width="15%">@item.tema</td>
+                        <td width="15%">@item.editorial</td>
+                        <td width="15%">@item.aniopublicacion</td>
+                        <td width="15%">@item.paginas</td>
+                        <td width="15%">@item.categoria</td>
+                        <td>
+                            <div class="w-75 btn-group" role="group">
+                                <a asp-controller="Cliente" asp-action="Editar" asp-route-Id="@item.id" class="btn btn-primary mx-2">Editar</a>
+                                <a asp-controller="Cliente" asp-action="Eliminar" asp-route-Id="@item.id" class="btn btn-danger mx-2">Eliminar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No hay registros</p>
+    }
+</div>
 

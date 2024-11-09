@@ -5,7 +5,7 @@
 namespace T3_Grupo02.Migrations
 {
     /// <inheritdoc />
-    public partial class agregarBD_Grupo02_T3 : Migration
+    public partial class holaLee : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

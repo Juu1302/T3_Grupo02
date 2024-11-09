@@ -5,6 +5,7 @@ using T3_Grupo02.Models;
 
 namespace T3_Grupo02.Controllers
 {
+    [Authorize]
     public class LibrosController : Controller
     {
         private readonly ApplicationDbContext _db;

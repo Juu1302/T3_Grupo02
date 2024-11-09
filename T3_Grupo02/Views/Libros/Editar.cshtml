@@ -1,4 +1,4 @@
-﻿@model T3_Grupo02.Models.Libro
+﻿@model T3_Grupo02.Models.Libro;
 @{
     ViewData["Title"] = "Editar";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -7,7 +7,7 @@
 <h1>Editar</h1>
 
 <form method="post" asp-action="Editar">
-    <input asp-for="id" hidden />
+    <input asp-for="Id" hidden />
     <div class="border p-3">
 
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
@@ -83,4 +83,5 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
 }
+
 

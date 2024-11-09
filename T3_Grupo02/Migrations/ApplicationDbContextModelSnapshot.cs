@@ -226,11 +226,11 @@ namespace T3_Grupo02.Migrations
 
             modelBuilder.Entity("T3_Grupo02.Models.Libro", b =>
                 {
-                    b.Property<int>("id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<int>("aniopublicacion")
                         .HasColumnType("int");
@@ -258,7 +258,7 @@ namespace T3_Grupo02.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("id");
+                    b.HasKey("Id");
 
                     b.ToTable("Libro");
                 });
